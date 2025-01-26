@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>CSS card design
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: lightpink;
+
+            padding: 80px;
+
+        }
+
+        .card {
+            background-color: rgb(255, 255, 255);
+            width: 198px;
+            height: 360px;
+            border-radius: 7px;
+
+
+
+        }
+
+
+        .image img {
+            height: 120px;
+            width: 188px;
+            border-radius: 7px;
+
+        }
+
+        .image {
+            padding: 5px;
+
+        }
+
+        .content {
+            padding: 13px;
+
+        }
+
+        .content p {
+            font-size: 16px;
+            font-family: 'Georgia', serif;
+            color: #4d4d4d;
+            /* Dark grey for better readability */
+
+            line-height: 1.6;
+        }
+
+        .capsule {
+            padding: 1px 18px;
+
+
+        }
+
+        .capsule span {
+
+            border: 1px solid grey;
+            padding: 2px 4px;
+            border-radius: 13px;
+
+
+
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            /* Slight zoom-in effect */
+        }
+
+        .content h1 {
+            font-family: 'Pacifico', 'Satisfy';
+            color: #b30047;
+            /* Dark red */
+            font-size: 18px;
+        }
+
+        .content p {
+            font-family: 'Georgia', serif;
+            color: #4d4d4d;
+            /* Dark grey for better readability */
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="image">
+            <img src="couple1.avif" alt="">
+        </div>
+        <div class="capsule">
+            <span> Nature</span>
+            <span> Love</span>
+        </div>
+        <div class="content">
+            <h1>Saint-Valentin.</h1>
+            <p>
+                "Love is the most beautiful feeling in the world. It’s not just in grand gestures, but in the quiet moments, the shared laughter, and the simple touch of a hand. On this day of love, I want you to know that my heart is forever yours. Happy Valentine’s Day, my love."
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
