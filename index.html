@@ -3,113 +3,96 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=div, initial-scale=1.0">
-    <title>CSS card design
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card Design</title>
+
     <style>
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
             background-color: lightpink;
+            min-height: 100vh;
 
-            padding: 80px;
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .card {
-            background-color: rgb(255, 255, 255);
-            width: 198px;
-            height: 360px;
-            border-radius: 7px;
-
-
-
-        }
-
-
-        .image img {
-            height: 120px;
-            width: 188px;
-            border-radius: 7px;
-
-        }
-
-        .image {
-            padding: 5px;
-
-        }
-
-        .content {
-            padding: 13px;
-
-        }
-
-        .content p {
-            font-size: 16px;
-            font-family: 'Georgia', serif;
-            color: #4d4d4d;
-            /* Dark grey for better readability */
-
-            line-height: 1.6;
-        }
-
-        .capsule {
-            padding: 1px 18px;
-
-
-        }
-
-        .capsule span {
-
-            border: 1px solid grey;
-            padding: 2px 4px;
-            border-radius: 13px;
-
-
-
+            background-color: #fff;
+            width: 280px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
         }
 
         .card:hover {
             transform: scale(1.05);
-            /* Slight zoom-in effect */
+        }
+
+        .image img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .capsule {
+            padding: 10px;
+        }
+
+        .capsule span {
+            border: 1px solid grey;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            margin-right: 6px;
+        }
+
+        .content {
+            padding: 15px;
         }
 
         .content h1 {
-            font-family: 'Pacifico', 'Satisfy';
-            color: #b30047;
-            /* Dark red */
             font-size: 18px;
+            color: #b30047;
+            margin-bottom: 8px;
         }
 
         .content p {
-            font-family: 'Georgia', serif;
-            color: #4d4d4d;
-            /* Dark grey for better readability */
             font-size: 14px;
             line-height: 1.6;
+            color: #4d4d4d;
+            font-family: Georgia, serif;
         }
     </style>
 </head>
 
 <body>
+
     <div class="card">
         <div class="image">
-            <img src="couple1.avif" alt="">
+            <img src="couple1.avif" alt="Valentine Image">
         </div>
+
         <div class="capsule">
-            <span> Nature</span>
-            <span> Love</span>
+            <span>Nature</span>
+            <span>Love</span>
         </div>
+
         <div class="content">
-            <h1>Saint-Valentin.</h1>
+            <h1>Saint-Valentin</h1>
             <p>
-                "Love is the most beautiful feeling in the world. It’s not just in grand gestures, but in the quiet moments, the shared laughter, and the simple touch of a hand. On this day of love, I want you to know that my heart is forever yours. Happy Valentine’s Day, my love."
+                Love is the most beautiful feeling in the world. It’s not just in grand gestures, but in the quiet moments,
+                the shared laughter, and the simple touch of a hand. On this day of love, I want you to know that my heart
+                is forever yours. Happy Valentine’s Day, my love.
             </p>
         </div>
     </div>
-</body>
 
+</body>
 </html>
